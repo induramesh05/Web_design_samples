@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="signupstyle.css">
+    <script type="text/javascript" src="signup.js"></script>
+</head>
+
+<body>
+
+    <header id="mainheader">
+
+        <div id="header1">
+            <h1>Sign Up Page</h1>
+        </div>
+
+        <div id="navbar">
+            <ul>
+                <li><a class="active" href="C:/Users/sramesh/Desktop/wdclass/html/index1.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <div id="login">
+                <a href="C:\Users\sramesh\Desktop\wdclass\html\login.htm">
+                    <img src="C:\Users\sramesh\Desktop\wdclass\images\login.jpg" alt="login"></a>
+            </div>
+            <div id="signing">
+                <p> <a href="C:\Users\sramesh\Desktop\wdclass\html\login.htm">Login</a></p>
+
+            </div>
+        </div>
+    </header>
+    <div class="maincontainer" style="margin-top: 85px;">
+        <h2>Please fill the following details to sign up:</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Personal')" id="defaultOpen">Personal</button>
+
+            <button class="tablinks" onclick="openCity(event, 'Official')">Official</button>
+            <button class="tablinks" onclick="openCity(event, 'Ecurricular')">Extra curricular</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Personal" class="tabcontent">
+            <h3>Personal details</h3>
+            <form action="/Users/sramesh/Desktop/wdclass/html/index1.html" method="post">
+
+
+                <div class="container">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter name" name="name" required>
+
+                    <label for="dob"><b>Date of Birth :</b></label>
+                    <input type="date" placeholder="Enter ur DOB" max="2006-01-01" min="1950-12-31" name="dob" required><br><br>
+
+                    <label for="phone"><b>Phone Number:</b></label>
+                    <input type="tel" placeholder="1234-56-7890" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" name="phone" required> <br><br>
+
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required> <br><br>
+
+                    <label for="psw"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw1"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat the Password" name="psw1" required>
+
+                    <label>
+                <input type="checkbox" checked="checked" name="remember"> By creating an account, you agree to our Terms & Conditions.
+              </label>
+
+
+                    <div class="clearfix">
+
+                        <button type="submit" class="tablinks" onclick="openCity(event, 'Official')">Next</button>
+
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+
+        <div id="Official" class="tabcontent">
+            <h3>Official Details</h3>
+            <form action="/Users/sramesh/Desktop/wdclass/html/index1.html" method="post">
+
+
+                <div class="container">
+                    <label for="Qual"><b>Qualification</b></label>
+                    <input list="degree" placeholder="Select" name="Qual" required> <datalist id="degree">
+                <option value="B.E">
+                <option value="B.Tech">
+                <option value="B.Sc">
+                <option value="B.com">
+                <option value="M.E">
+              </datalist> <br><br>
+
+                    <label for="academic"><b>Academic Details</b></label>
+                    <textarea placeholder="Enter your Academic details here" name="expdetails" rows="3" cols="30" required></textarea><br><br>
+
+                    <label for="designation"><b>Current Designation</b></label>
+                    <input type="text" placeholder="Type the details here" name="designation" required max=50><br><br>
+
+                    <label for="company"><b>Current Company</b></label>
+                    <input type="text" placeholder="Type the details here" name="company" required max=50><br><br>
+
+                    <label for="exp"><b>No of years Experience:</b></label>
+                    <input type="number" name="exp" min="1" max="20" required> <br><br>
+
+
+                    <label for="expdetails"><b>Work Details/Project Details:</b></label>
+                    <textarea placeholder="Enter your work details here" name="expdetails" rows="3" cols="30" required></textarea><br><br>
+
+                    <label for="myfile">Upload your Resume:</label>
+                    <input type="file" id="myfile" name="myfile">
+
+
+
+                    <p>By creating an account, you agree to our Terms & Conditions.</p>
+
+                    <div class="clearfix">
+                        <button class="tablinks" onclick="openCity(event, 'Ecurricular')">Next</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div id="Ecurricular" class="tabcontent">
+            <h3>Extra curricular</h3>
+            <form action="/Users/sramesh/Desktop/wdclass/html/index1.html" method="post">
+
+
+                <div class="container">
+                    <label for="hobby"><b>Favourite Hobby: </b></label>
+                    <input list="hobby" placeholder="Select" name="hobby"> <datalist id="hobby">
+                <option value="Sports">
+                <option value="Singing">
+                <option value="Reading">
+                <option value="Poetry">
+                <option value="Dancing">
+                    <option value="Movies">
+                    <option value="Acting">
+                        <option value="Others">
+              </datalist> <br><br>
+
+                    <label for="oh"><b>Other Hobbies/Interests(if any):</b></label>
+                    <textarea placeholder="Enter your other interests here" name="oh" rows="1" cols="30"></textarea><br><br>
+
+                    <label for="ec"><b>Extra curricular Activities</b></label>
+                    <textarea placeholder="Enter here" name="ec" rows="3" cols="30" required></textarea><br><br>
+
+                    <label for="sports"><b>Sports:</b></label>
+                    <input type="checkbox" style="margin-left: 70px;" name="sports1">
+                    <label for="sports1"><b>Cricket</b></label><br><br>
+                    <input type="checkbox" class="sport" name="sports2">
+                    <label for="sports2"><b>Football</b></label><br><br>
+                    <input type="checkbox" class="sport" name="sports3">
+                    <label for="sports3"><b>Hockey</b></label><br><br>
+                    <input type="checkbox" class="sport" name="sports4">
+                    <label for="sports4"><b>Baseball</b></label><br><br>
+                    <input type="checkbox" class="sport" name="sports5">
+                    <label for="sports5"><b>Tennis</b></label><br><br>
+                    <input type="checkbox" class="sport" name="sports6">
+                    <label for="sports6"><b>Badminton</b></label><br><br><br>
+
+                    <label for="fav1"><b>Favorite Team or Player in Sports:</b></label>
+                    <textarea placeholder="Enter here" name="fav1" rows="1" cols="30" required></textarea><br><br>
+
+                    <label for="fav2"><b>Favorite Movie or Celebrity:</b></label>
+                    <textarea placeholder="Enter here" name="fav2" rows="1" cols="30" required></textarea><br><br>
+
+                    <label for="awards"><b>Awards /Championships(if any)</b></label>
+                    <input type="text" placeholder="Type the details here" name="awards" required max=50><br><br>
+
+
+                    <label>
+                <input type="checkbox" checked="checked" name="check"> By creating an account you agree to our <a href="#">Terms & Conditions.</a>
+              </label>
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn" style="width: 100%;"><a href="C:\Users\sramesh\Desktop\wdclass\html\login.htm">SIGN UP</a></button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
